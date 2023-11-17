@@ -1,13 +1,11 @@
 import JSZip from "jszip";
-import type {LifeTimeCircleHook, LogWrapper} from "../../../dist-BeforeSC2/ModLoadController";
+import type {LogWrapper} from "../../../dist-BeforeSC2/ModLoadController";
 import type {SC2DataManager} from "../../../dist-BeforeSC2/SC2DataManager";
 import type {AddonPluginHookPointEx} from "../../../dist-BeforeSC2/AddonPlugin";
 import type {ModUtils} from "../../../dist-BeforeSC2/Utils";
-import type {ModBootJson, ModBootJsonAddonPlugin, ModInfo} from "../../../dist-BeforeSC2/ModLoader";
-import {isArray, isNil, isString, isObject, every, isObjectLike} from 'lodash';
+import type {ModBootJsonAddonPlugin, ModInfo} from "../../../dist-BeforeSC2/ModLoader";
+import {isArray, isNil, isString, every, isObjectLike} from 'lodash';
 import {ModZipReader} from "../../../dist-BeforeSC2/ModZipReader";
-import {CacheRecord, PassageDataItem} from "../../../dist-BeforeSC2/SC2DataInfoCache";
-
 
 export interface LanguageFileItem {
     language: string;
