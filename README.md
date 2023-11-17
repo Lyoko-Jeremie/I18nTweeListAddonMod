@@ -13,6 +13,10 @@ when use this addon, don't use the `tweeFileList` in `boot.json` file , that one
 ```json lines
 
 {
+  "tweeFileList": [
+    // keep this empty , this will useless when use this addon
+    // 此处的内容将会被这个addon使用对应语言的tweeFileList覆盖
+  ],
   "addonPlugin": [
     {
       "modName": "I18nTweeList",
